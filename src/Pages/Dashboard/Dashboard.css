@@ -1,0 +1,66 @@
+
+.dashboardContainer {
+   display: flex;
+   flex-direction: row;
+   height: 100vh;
+
+   .menu {
+    width: 15vw;
+    height: 100vh;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    position: sticky; /* Fija el menú en su lugar durante el desplazamiento */
+    top: 0; /* Asegura que se quede en la parte superior */
+    overflow: auto;
+
+
+    .viñeta {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5em;
+    }
+
+    .icono {
+        border: 1px solid;
+        
+        color: white;
+        padding: 5px;
+        font-size: 15px;
+        border-radius: 7px;
+    }
+
+    .texto {
+        font-family: 'Segoe UI';
+        font-size: 12px;
+        color: black;
+    }
+
+    .subviñetas {
+        display: flex;
+        flex-direction: column;
+        width: 10vw;
+        gap: 1em;
+        font-family: 'Segoe UI';
+        font-size: 12px;
+
+        
+      }
+   }
+
+   .cuerpo {
+     width: calc(100vw - 15vw);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; 
+
+    .palabras {
+        font-family: 'Segoe UI';
+        font-size: 12px;
+        color: black;
+    }
+   }
+}
